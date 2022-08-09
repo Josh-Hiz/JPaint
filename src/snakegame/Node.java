@@ -1,33 +1,30 @@
 package snakegame;
 
-import javax.swing.*;
 import java.awt.Color;
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.GridLayout;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
+import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
 public class Node extends JPanel {
 
-    int xPos;
-    int yPos;
+    private final int SIZE = 20;
 
-    public Node(int x, int  y){
-        this.xPos = x;
-        this.yPos = y;
-
+    public Node(){
+        this.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        this.setPreferredSize(new Dimension(SIZE,SIZE));
     }
 
     @Override
     public void paintComponent(Graphics g){
         super.paintComponent(g);
-        Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.WHITE);
-        g2.drawRect(this.xPos,this.yPos, Board.WINDOW_WIDTH/200,Board.WINDOW_HEIGHT/ 160);
-        g2.setColor(Color.DARK_GRAY);
-        g2.fillRect(this.xPos,this.yPos,Board.WINDOW_WIDTH/200,Board.WINDOW_HEIGHT/ 160);
+        g.setColor(Color.WHITE);
+        g.fillRect(0,0, getWidth(), getHeight());
     }
 
 }

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Initial window setup">
-      <change afterPath="$PROJECT_DIR$/src/snakegame/Node.java" afterDir="false" />
+    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Update README.md">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakegame/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/snakegame/GameFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Draw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +43,17 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="snakegame.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="snakegame.Main" />
       <module name="SnakeGame" />
       <extension name="coverage">
@@ -59,7 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.snakegame.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658290652610</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added basic grid layout">
+      <created>1659996453925</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659996453925</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README.md">
+      <created>1659996522800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659996522800</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,7 +125,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial window setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial window setup" />
+    <MESSAGE value="Added basic grid layout" />
+    <MESSAGE value="Update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SnakeGame$Main.ic" NAME="Main Coverage Results" MODIFIED="1659935506512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
