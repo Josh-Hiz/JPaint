@@ -25,18 +25,30 @@ public class Game extends JPanel implements ActionListener {
 
     private final int DELAY = 75;
 
-    private Node[][] grid = new Node[50][50];
+    private Node[][] grid = new Node[40][40];
 
     private char direction;
 
-
+    Timer timer;
 
     public Game(){
+
+        this.setBackground(Color.black);
+        this.setFocusable(true);
+        startGame();
+
+    }
+
+    private void startGame(){
         initNodes();
+        timer = new Timer(DELAY, this);
+        timer.start();
     }
 
     private JPanel initNodes(){
-        this.setLayout(new GridLayout(50,50,0,0));
+
+        this.setLayout(new GridLayout(40,40,0,0));
+
         for(int row = 0; row <= grid.length - 1; row++){
             for(int col = 0; col <= grid[row].length - 1; col++){
                 grid[row][col] = new Node();
@@ -45,7 +57,6 @@ public class Game extends JPanel implements ActionListener {
         }
         return this;
     }
-
 
     //Create the game loop
     @Override

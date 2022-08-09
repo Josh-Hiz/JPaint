@@ -8,12 +8,9 @@ public class GameFrame {
     JFrame window;
     Game panel;
 
-    final int SCREEN_WIDTH = 800;
-    final int SCREEN_HEIGHT = 800;
     public GameFrame(){
         window = new JFrame();
         panel = new Game();
-        window.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
         window.setLocationRelativeTo(null);
         window.setTitle("JSnake");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
