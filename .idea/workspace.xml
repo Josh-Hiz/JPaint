@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Refactor Grid">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/GameFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Paint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/PaintFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="snakegame" />
     </key>
   </component>
   <component name="RunManager">
@@ -112,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660010448720</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor Grid">
+      <created>1660010968424</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660010968424</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

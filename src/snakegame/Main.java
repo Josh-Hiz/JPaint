@@ -8,7 +8,7 @@ public class Main {
 
         EventQueue.invokeLater(() -> {
 
-            var gameFrame = new GameFrame();
+            var gameFrame = new PaintFrame();
             gameFrame.window.setVisible(true);
 
         });

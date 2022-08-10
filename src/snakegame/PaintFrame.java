@@ -1,25 +1,24 @@
 package snakegame;
 
 import javax.swing.*;
-import java.awt.*;
 
-public class GameFrame {
+public class PaintFrame {
 
     JFrame window;
-    Game panel;
+    Paint panel;
 
-    public GameFrame(){
+    public PaintFrame(){
         window = new JFrame();
-        panel = new Game();
+        panel = new Paint();
+        window.setUndecorated(false);
         window.setLocationRelativeTo(null);
-        window.setTitle("JSnake");
+        window.setTitle("JPaint");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
         window.add(panel);
         window.pack();
         window.setVisible(true);
 
-//        window.setUndecorated(false);
     }
 
 }
