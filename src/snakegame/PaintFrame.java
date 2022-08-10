@@ -7,7 +7,7 @@ public class PaintFrame {
     JFrame window;
     Paint panel;
 
-    public PaintFrame(){
+    public PaintFrame() {
         window = new JFrame();
         panel = new Paint();
         window.setUndecorated(false);

@@ -1,17 +1,14 @@
 package snakegame;
 
-import java.awt.Color;
+import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Random;
-
-import javax.swing.JPanel;
-import javax.swing.Timer;
 
 public class Paint extends JPanel {
 
-    public final static Node[][] grid = new Node[40][40];
+    public final static Node[][] grid = new Node[100][130];
 
     Random rand = new Random();
 
@@ -32,7 +29,7 @@ public class Paint extends JPanel {
 
     private void initNodes() {
 
-        this.setLayout(new GridLayout(40, 40, 0, 0));
+        this.setLayout(new GridLayout(100, 130, 0, 0));
 
         for (int row = 0; row <= grid.length - 1; row++) {
             for (int col = 0; col <= grid[row].length - 1; col++) {

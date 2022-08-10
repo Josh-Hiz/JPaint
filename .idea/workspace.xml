@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Refactor Grid">
+    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="JPaint Refactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Paint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/GameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/PaintFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/snakegame/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Paint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +56,26 @@
   <component name="RunManager">
     <configuration name="snakegame.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="snakegame.Main" />
-      <module name="SnakeGame" />
+      <module name="JPaint" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="snakegame.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JPaint" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JPaint" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660010968424</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JPaint Refactoring">
+      <created>1660090250846</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660090250846</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +163,8 @@
     <MESSAGE value="Added basic grid layout" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Refactor Grid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Grid" />
+    <MESSAGE value="JPaint Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPaint Refactoring" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SnakeGame$Main.ic" NAME="Main Coverage Results" MODIFIED="1659935506512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

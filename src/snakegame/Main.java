@@ -1,10 +1,10 @@
 package snakegame;
 
-import java.awt.EventQueue;
+import java.awt.*;
 
 public class Main {
 
-    public static void main(String arg[]){
+    public static void main(String arg[]) {
 
         EventQueue.invokeLater(() -> {
 
