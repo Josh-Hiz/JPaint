@@ -1,74 +1,64 @@
 package JavaPaint;
 
-import java.awt.Color;
-import java.awt.Image;
+import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.awt.EventQueue;
-import java.awt.Graphics2D;
-import java.awt.Graphics;
-import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.*;
-import javax.swing.ImageIcon;
-import javax.swing.BorderFactory;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
-import javax.swing.JMenu;
-
-public class Grid extends JPanel implements ActionListener {
+public class Grid extends JComponent implements ActionListener {
 
     private static final long serialVersionUID = 1L;
-
+    protected static JMenuBar colorBar;
     private final int rows;
     private final int cols;
-
-    public JButton allColorMenu;
-
-    protected Color nodeColor;
-
     private final JLabel[][] nodes;
 
-    public Grid(int rows, int cols){
+    JSlider rowSlider;
+    JSlider colSlider;
+
+    Slider row;
+    Slider col;
+    JColorChooser colorChooser;
+    private JButton allColorMenu;
+    private JMenu colorMenu;
+
+    public Grid(int rows, int cols) {
         this.rows = rows;
         this.cols = cols;
-        this.setLayout(new GridLayout(rows,cols));
+        this.setLayout(new GridLayout(rows, cols));
         this.nodes = new JLabel[this.rows][this.cols];
         createScreen();
     }
 
-    private void createScreen(){
+    private void createScreen() {
         createColorMenu();
+        initSliders();
         initNodes();
 
     }
 
-    private void createColorMenu(){
+    private void createColorMenu() {
 
-        JMenu colorMenu = new JMenu("Standard Colors");
+        colorBar = new JMenuBar();
+
+        colorMenu = new JMenu("Standard Colors");
 
         allColorMenu = new JButton("All colors");
         allColorMenu.addActionListener(this);
 
-        JMenuBar colorBar = new JMenuBar();
 
-        JMenuItem orange = new JMenuItem("Red");
-        JMenuItem green = new JMenuItem("Green");
-        JMenuItem blue = new JMenuItem("Blue");
-        JMenuItem magenta = new JMenuItem("Magenta");
-        JMenuItem cyan = new JMenuItem("Cyan");
-        JMenuItem yellow = new JMenuItem("Yellow");
-        JMenuItem black = new JMenuItem("Black");
-        JMenuItem white = new JMenuItem("White/Clear");
-        JMenuItem gray = new JMenuItem("Gray");
-        JMenuItem dark_gray = new JMenuItem("Dark Gray");
-        JMenuItem light_gray = new JMenuItem("Light Gray");
-        JMenuItem pink = new JMenuItem("Pink");
+        JCheckBoxMenuItem orange = new JCheckBoxMenuItem("Red");
+        JCheckBoxMenuItem green = new JCheckBoxMenuItem("Green");
+        JCheckBoxMenuItem blue = new JCheckBoxMenuItem("Blue");
+        JCheckBoxMenuItem magenta = new JCheckBoxMenuItem("Magenta");
+        JCheckBoxMenuItem cyan = new JCheckBoxMenuItem("Cyan");
+        JCheckBoxMenuItem yellow = new JCheckBoxMenuItem("Yellow");
+        JCheckBoxMenuItem black = new JCheckBoxMenuItem("Black");
+        JCheckBoxMenuItem white = new JCheckBoxMenuItem("White/Clear");
+        JCheckBoxMenuItem gray = new JCheckBoxMenuItem("Gray");
+        JCheckBoxMenuItem dark_gray = new JCheckBoxMenuItem("Dark Gray");
+        JCheckBoxMenuItem light_gray = new JCheckBoxMenuItem("Light Gray");
+        JCheckBoxMenuItem pink = new JCheckBoxMenuItem("Pink");
 
         colorMenu.add(orange);
         colorMenu.add(green);
@@ -89,10 +79,10 @@ public class Grid extends JPanel implements ActionListener {
         PaintFrame.window.setJMenuBar(colorBar);
     }
 
-    private void initNodes(){
+    private void initNodes() {
 
-        for(int i = 0; i < this.rows; i++){
-            for(int j = 0; j < this.cols; j++){
+        for (int i = 0; i < this.rows; i++) {
+            for (int j = 0; j < this.cols; j++) {
                 Node node = new Node();
                 this.nodes[i][j] = node;
                 this.add(nodes[i][j]);
@@ -102,16 +92,37 @@ public class Grid extends JPanel implements ActionListener {
 
     }
 
+    private void initSliders() {
+
+        rowSlider = new JSlider();
+        colSlider = new JSlider();
+
+        row = new Slider(rowSlider, "Rows");
+        col = new Slider(colSlider, "Columns");
+
+        Grid.colorBar.add(Slider.rowColSliders);
+
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == allColorMenu){
-            try{
+
+        if (e.getSource() == allColorMenu) {
+
+            try {
+
                 System.out.println("This button is being click");
-                JColorChooser colorChooser = new JColorChooser();
-                nodeColor = JColorChooser.showDialog(null, "Choose any color you desire!",Color.BLACK);
-            } catch (Exception exception){
-                System.out.println("ERROR: COLOR CHOOSER HAS CRASHED");
+
+                colorChooser = new JColorChooser();
+
+                Node.nodeColor = JColorChooser.showDialog(null, "Choose any color you desire!", Color.BLACK);
+
+                System.out.println("Node Color: " + Node.getNodeColor());
+
+            } catch (Exception exception) {
+                throw new Error("ERROR, COLOR CHOOSE HAS CRASHED");
             }
+
         }
     }
 }
