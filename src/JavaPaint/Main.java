@@ -1,4 +1,4 @@
-package snakegame;
+package JavaPaint;
 
 import java.awt.*;
 

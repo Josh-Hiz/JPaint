@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="JPaint Refactoring">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaPaint/Grid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaPaint/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/snakegame/Paint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/snakegame/Paint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/Paint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/snakegame/PaintFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/PaintFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jhiz2704/IntelliJProjects/JPaint&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -54,12 +57,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="snakegame.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="snakegame.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaPaint.Main" />
       <module name="JPaint" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="snakegame.*" />
+          <option name="PATTERN" value="JavaPaint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,22 +70,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JPaint" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JPaint" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.snakegame.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660090250846</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="JPaint Refactoring">
+      <created>1660091154615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660091154616</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,22 +1,21 @@
-package snakegame;
+package JavaPaint;
 
 import javax.swing.*;
 
 public class PaintFrame {
 
-    JFrame window;
-    Paint panel;
+    protected static JFrame window;
 
     public PaintFrame() {
         window = new JFrame();
-        panel = new Paint();
+        Grid paintGrid = new Grid(50, 100);
         window.setUndecorated(false);
-        window.setLocationRelativeTo(null);
         window.setTitle("JPaint");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setResizable(false);
-        window.add(panel);
+        window.add(paintGrid);
         window.pack();
+        window.setLocationRelativeTo(null);
         window.setVisible(true);
 
     }
