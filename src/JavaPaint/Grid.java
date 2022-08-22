@@ -9,11 +9,9 @@ public class Grid extends JComponent implements ActionListener {
 
     private static final long serialVersionUID = 1L;
 
-    private final Color DEFAULT_COLOR = Color.BLACK;
-
     protected static JMenuBar colorBar;
-    private int rows;
-    private int cols;
+    private final int rows;
+    private final int cols;
 
     private final JLabel[][] nodes;
 
@@ -26,7 +24,6 @@ public class Grid extends JComponent implements ActionListener {
     Slider col;
     JColorChooser colorChooser;
     private JButton allColorMenu;
-    private JMenu colorMenu;
 
     public Grid(int rows, int cols) {
         this.rows = rows;
@@ -34,6 +31,7 @@ public class Grid extends JComponent implements ActionListener {
         this.setLayout(new GridLayout(rows, cols));
         this.nodes = new JLabel[this.rows][this.cols];
 
+        Color DEFAULT_COLOR = Color.BLACK;
         Node.setNodeColor(DEFAULT_COLOR); //Set default color as black
 
         createScreen();
@@ -67,7 +65,7 @@ public class Grid extends JComponent implements ActionListener {
 
         colorBar = new JMenuBar();
 
-        colorMenu = new JMenu("Standard Colors");
+        JMenu colorMenu = new JMenu("Standard Colors");
 
         allColorMenu = new JButton("All colors");
         allColorMenu.addActionListener(this);

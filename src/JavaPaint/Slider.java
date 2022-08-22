@@ -8,11 +8,9 @@ public class Slider extends JSlider implements ChangeListener {
 
     protected static final JMenu rowColSliders = new JMenu("Rows & Columns");
     private final JSlider windowSlider;
-    private final String sliderName;
 
     public Slider(JSlider slider, String Name) {
         this.windowSlider = slider;
-        this.sliderName = Name;
         createWindowSlider(slider, Name);
 
     }
