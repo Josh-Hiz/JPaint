@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Add painting function for JColorChooser and Erase function">
+    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaPaint/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaPaint/PaintFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/PaintFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/JavaPaint/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Slider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661145054877</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Refactoring">
+      <created>1661145151732</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661145151732</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +197,8 @@
     <MESSAGE value="Finish JPaint GUI" />
     <MESSAGE value="Add Slider that builds JSliders" />
     <MESSAGE value="Add painting function for JColorChooser and Erase function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add painting function for JColorChooser and Erase function" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SnakeGame$Main.ic" NAME="Main Coverage Results" MODIFIED="1659935506512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -3,6 +3,7 @@ package JavaPaint;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import java.awt.*;
 
 public class Slider extends JSlider implements ChangeListener {
 

@@ -17,13 +17,21 @@ public class Grid extends JComponent implements ActionListener {
 
     JCheckBoxMenuItem erase;
 
+    JButton clearAll;
+
+    JMenu colorMenu;
+
     JSlider rowSlider;
     JSlider colSlider;
 
+    JSlider nodeSizeSlider;
+
     Slider row;
     Slider col;
+
+    Slider nodeSize;
     JColorChooser colorChooser;
-    private JButton allColorMenu;
+    JButton allColorMenu;
 
     public Grid(int rows, int cols) {
         this.rows = rows;
@@ -58,14 +66,30 @@ public class Grid extends JComponent implements ActionListener {
     private void createEraser(){
         erase = new JCheckBoxMenuItem("Erase");
         erase.addActionListener(this);
+
+        clearAll = new JButton("Clear Grid");
+        clearAll.addActionListener(this);
+
+
         colorBar.add(erase);
+        colorBar.add(clearAll);
+    }
+
+    private void clearAll(){
+
+        for (JLabel[] node : nodes) {
+            for (JLabel jLabel : node) {
+                jLabel.setBackground(null);
+            }
+        }
     }
 
     private void createColorMenu() {
 
         colorBar = new JMenuBar();
 
-        JMenu colorMenu = new JMenu("Standard Colors");
+        colorMenu = new JMenu("Standard Colors");
+
 
         allColorMenu = new JButton("All colors");
         allColorMenu.addActionListener(this);
@@ -120,7 +144,9 @@ public class Grid extends JComponent implements ActionListener {
 
         rowSlider = new JSlider();
         colSlider = new JSlider();
+        nodeSizeSlider = new JSlider();
 
+        nodeSize = new Slider(nodeSizeSlider, "Node Size");
         row = new Slider(rowSlider, "Rows");
         col = new Slider(colSlider, "Columns");
 
@@ -160,7 +186,10 @@ public class Grid extends JComponent implements ActionListener {
             } catch(Exception exception) {
                 throw new Error("ERROR, ERASER HAS CRASHED");
             }
+        }
 
+        if(e.getSource() == clearAll){
+            clearAll();
         }
     }
 }
