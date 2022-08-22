@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Add Slider that builds JSliders" />
+    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Add Slider that builds JSliders">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Slider.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660338990034</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add Slider that builds JSliders">
+      <created>1660339049317</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660339049317</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -8,10 +8,16 @@ import java.awt.event.ActionListener;
 public class Grid extends JComponent implements ActionListener {
 
     private static final long serialVersionUID = 1L;
+
+    private final Color DEFAULT_COLOR = Color.BLACK;
+
     protected static JMenuBar colorBar;
-    private final int rows;
-    private final int cols;
+    private int rows;
+    private int cols;
+
     private final JLabel[][] nodes;
+
+    JCheckBoxMenuItem erase;
 
     JSlider rowSlider;
     JSlider colSlider;
@@ -27,14 +33,34 @@ public class Grid extends JComponent implements ActionListener {
         this.cols = cols;
         this.setLayout(new GridLayout(rows, cols));
         this.nodes = new JLabel[this.rows][this.cols];
+
+        Node.setNodeColor(DEFAULT_COLOR); //Set default color as black
+
         createScreen();
+
     }
 
     private void createScreen() {
         createColorMenu();
         initSliders();
         initNodes();
+        createEraser();
+    }
 
+
+    /** TODO Make JSlider change rows and columns within window in real time
+     * private int makeRows(Slider slideRow) {
+     *         return this.rows = slideRow.getValue();
+     *     }
+     * private int makeCols(Slider slideCol) {
+     *         return this.cols = slideCol.getValue();
+     *     }
+     */
+
+    private void createEraser(){
+        erase = new JCheckBoxMenuItem("Erase");
+        erase.addActionListener(this);
+        colorBar.add(erase);
     }
 
     private void createColorMenu() {
@@ -119,8 +145,22 @@ public class Grid extends JComponent implements ActionListener {
 
                 System.out.println("Node Color: " + Node.getNodeColor());
 
+
             } catch (Exception exception) {
                 throw new Error("ERROR, COLOR CHOOSE HAS CRASHED");
+            }
+
+        }
+
+        if(erase.getState()){
+
+            try{
+
+                System.out.println("Eraser selected");
+                Node.setNodeColor(null);
+
+            } catch(Exception exception) {
+                throw new Error("ERROR, ERASER HAS CRASHED");
             }
 
         }

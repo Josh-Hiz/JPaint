@@ -9,7 +9,8 @@ public class Node extends JLabel {
 
     private static final long serialVersionUID = 1L;
 
-    static Color nodeColor;
+    protected static Color nodeColor;
+
 
     public Node() {
         setOpaque(true);
@@ -21,7 +22,7 @@ public class Node extends JLabel {
         return nodeColor;
     }
 
-    protected void setNodeColor(Color color) {
+    protected static void setNodeColor(Color color) {
         nodeColor = color;
     }
 
@@ -32,11 +33,16 @@ public class Node extends JLabel {
 
     public static class mouseListener extends MouseAdapter {
 
+
+
         @Override
         public void mouseClicked(MouseEvent e) {
 
+            Node node = (Node) e.getSource();
+
             if (e.getButton() == MouseEvent.BUTTON1) {
                 System.out.println("Left click registered successfully");
+                node.setBackground(getNodeColor());
             } else if (e.getButton() == MouseEvent.BUTTON3) {
                 System.out.println("Right click registered successfully");
             } else {

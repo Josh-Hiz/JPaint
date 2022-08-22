@@ -15,7 +15,6 @@ public class Slider extends JSlider implements ChangeListener {
         this.sliderName = Name;
         createWindowSlider(slider, Name);
 
-
     }
 
     private void createWindowSlider(JSlider slider, String Name) {
