@@ -33,7 +33,7 @@ public class Node extends JLabel {
 
     @Override
     public Dimension getPreferredSize() {
-        return new Dimension(15, 15);
+        return new Dimension(16, 16);
     }
 
 //    public static class mouseListener extends MouseAdapter {

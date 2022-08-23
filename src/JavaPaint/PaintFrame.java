@@ -1,16 +1,22 @@
 package JavaPaint;
 
-import javax.swing.*;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import java.awt.*;
 
 public class PaintFrame {
 
     protected static JFrame window;
 
+    Image icon = Toolkit.getDefaultToolkit().getImage("src/resources/pixel_brush.png");
+
     public PaintFrame() {
 
         window = new JFrame();
 
-        Grid paintGrid = new Grid(50, 100);
+        window.setIconImage(icon);
+
+        Grid paintGrid = new Grid(60, 90);
 
         window.setUndecorated(false);
         window.setTitle("JPaint");
