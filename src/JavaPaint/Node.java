@@ -1,9 +1,13 @@
 package JavaPaint;
 
+import JavaPaint.ActionListeners.NodeDragListener;
+import JavaPaint.ActionListeners.NodeMouseListener;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+//import java.awt.event.MouseAdapter;
+//import java.awt.event.MouseEvent;
+//import java.awt.event.MouseMotionListener;
 
 public class Node extends JLabel {
 
@@ -15,10 +19,11 @@ public class Node extends JLabel {
     public Node() {
         setOpaque(true);
         setBorder(BorderFactory.createLineBorder(Color.BLACK));
-        addMouseListener(new mouseListener());
+        addMouseListener(new NodeMouseListener());
+        addMouseMotionListener(new NodeDragListener());
     }
 
-    protected static Color getNodeColor() {
+    public static Color getNodeColor() {
         return nodeColor;
     }
 
@@ -31,28 +36,23 @@ public class Node extends JLabel {
         return new Dimension(15, 15);
     }
 
-    public static class mouseListener extends MouseAdapter {
-
-
-
-        @Override
-        public void mouseClicked(MouseEvent e) {
-
-            Node node = (Node) e.getSource();
-
-            if (e.getButton() == MouseEvent.BUTTON1) {
-                System.out.println("Left click registered successfully");
-                node.setBackground(getNodeColor());
-            } else if (e.getButton() == MouseEvent.BUTTON3) {
-                System.out.println("Right click registered successfully");
-            } else {
-                JOptionPane.showMessageDialog(null, "ERROR: Invalid or unregistered command detected");
-            }
-
-
-        }
-
-
-    }
+//    public static class mouseListener extends MouseAdapter {
+//
+//        @Override
+//        public void mouseClicked(MouseEvent e) {
+//
+//            Node node = (Node) e.getSource();
+//
+//            if (e.getButton() == MouseEvent.BUTTON1) {
+//                System.out.println("Left click registered successfully");
+//                node.setBackground(getNodeColor());
+//            } else if (e.getButton() == MouseEvent.BUTTON3) {
+//                System.out.println("Right click registered successfully");
+//            } else {
+//                JOptionPane.showMessageDialog(null, "ERROR: Invalid or unregistered command detected");
+//            }
+//
+//        }
 
 }
+
