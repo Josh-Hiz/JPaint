@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Added Custom Action Listeners">
-      <change afterPath="$PROJECT_DIR$/src/resources/pixel_brush.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/PaintFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/PaintFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JavaPaint/ActionListeners/NodeDragListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaPaint/ActionListeners/NodeDragListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

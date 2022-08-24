@@ -10,7 +10,6 @@ import static JavaPaint.Node.getNodeColor;
 
 public class NodeDragListener implements MouseMotionListener {
 
-
     @Override
     public void mouseDragged(MouseEvent e) {
 
