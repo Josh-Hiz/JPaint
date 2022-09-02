@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Added Custom Action Listeners">
-      <change afterPath="$PROJECT_DIR$/src/GridManager/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/ActionListeners/NodeDragListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/NodeListeners/NodeDragListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/ActionListeners/NodeMouseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/NodeListeners/NodeMouseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Grid.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listeners/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GridManager/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/PaintFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UIHelper/PaintFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JavaPaint/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UIHelper/Slider.java" afterDir="false" />
-    </list>
+    <list default="true" id="b73b64bc-f594-4afa-8887-f30e2797b4d1" name="Changes" comment="Finished touches" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -200,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661299994831</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Finished touches">
+      <created>1662081903185</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1662081903185</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +223,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Add utility functions" />
     <MESSAGE value="Added Custom Action Listeners" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Custom Action Listeners" />
+    <MESSAGE value="Finished touches" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished touches" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SnakeGame$Main.ic" NAME="Main Coverage Results" MODIFIED="1659935506512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
