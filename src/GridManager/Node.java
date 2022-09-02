@@ -1,7 +1,7 @@
-package JavaPaint;
+package GridManager;
 
-import JavaPaint.ActionListeners.NodeDragListener;
-import JavaPaint.ActionListeners.NodeMouseListener;
+import Listeners.NodeListeners.NodeDragListener;
+import Listeners.NodeListeners.NodeMouseListener;
 
 import javax.swing.*;
 import java.awt.*;

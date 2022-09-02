@@ -1,4 +1,6 @@
-package JavaPaint;
+package Listeners;
+
+import UIHelper.PaintFrame;
 
 import java.awt.*;
 

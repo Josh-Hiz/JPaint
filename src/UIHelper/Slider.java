@@ -1,13 +1,15 @@
-package JavaPaint;
+package UIHelper;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 //import java.awt.*;
 
-public class Slider extends JSlider implements ChangeListener {
+public class Slider extends JSlider  {
 
-    protected static final JMenu rowColSliders = new JMenu("Rows & Columns");
+    private final sliderListener listener = new sliderListener();
+
+    public static final JMenu rowColSliders = new JMenu("Rows & Columns");
     private final JSlider windowSlider;
 
     public Slider(JSlider slider, String Name) {
@@ -26,21 +28,26 @@ public class Slider extends JSlider implements ChangeListener {
         slider.setMinorTickSpacing(5);
         slider.setMajorTickSpacing(20);
 
-        slider.addChangeListener(this);
+
+        slider.addChangeListener(listener);
 
         rowColSliders.add(slider);
 
 
     }
 
+  public class sliderListener implements ChangeListener {
 
-    @Override
-    public void stateChanged(ChangeEvent e) {
+      @Override
+      public void stateChanged(ChangeEvent e) {
 
-        if (!windowSlider.getValueIsAdjusting()) {
-            int currentValue = windowSlider.getValue();
-            System.out.println(currentValue);
-        }
+          if (!windowSlider.getValueIsAdjusting()) {
+              int currentValue = windowSlider.getValue();
+              System.out.println(currentValue);
+          }
 
-    }
+      }
+
+  }
+
 }

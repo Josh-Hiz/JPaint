@@ -1,12 +1,12 @@
-package JavaPaint.ActionListeners;
+package Listeners.NodeListeners;
 
-import JavaPaint.Node;
+import GridManager.Node;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
-import static JavaPaint.Node.getNodeColor;
+import static GridManager.Node.getNodeColor;
 
 public class NodeDragListener implements MouseMotionListener {
 

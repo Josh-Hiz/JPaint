@@ -1,4 +1,6 @@
-package JavaPaint;
+package UIHelper;
+
+import GridManager.Grid;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -6,7 +8,7 @@ import java.awt.*;
 
 public class PaintFrame {
 
-    protected static JFrame window;
+    public static JFrame window;
 
     Image icon = Toolkit.getDefaultToolkit().getImage("src/resources/pixel_brush.png");
 
@@ -28,9 +30,10 @@ public class PaintFrame {
         window.setVisible(true);
 
         JOptionPane.showMessageDialog(window,
-                             "Please use the EXPORT utility when you are 100% sure you are \n" +
-                                      "finished with your project, as an import utility is currently \n" +
-                                      "under development and will take time, thank you for your patience.");
+                             "Notes when using this program: \n" +
+                                      "This is still UNDER DEVELOPMENT, some features have not been implemented\n" +
+                                      "such as: Row and Column sliders, improved efficiency, and refactoring.\n" +
+                                      "Have fun trying it out!");
 
     }
 
