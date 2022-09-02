@@ -16,6 +16,11 @@ As mentioned before, this project is "bare-bones" but what does that mean? Well 
 top tier corporate software with hundreds of features, it's supposed to give the artist what they need, a grid they can 
 resize, and any color they want, with (hopefully) the ability to export to *.png* and *.jpg* file formats in a future update.
 
+## HOW TO USE:
+- Make sure Java is installed, on MAC OS, run *java --version*, on Windows 8+, please run *java -version* in your console
+- Within your terminal on MAC OS, find the directory that you installed the JAR file into to, and within terminal, please run *java -jar JPaint.jar* within that directory. 
+On Windows there are *MANY* methods similar to MAC OS. Please choose a JAR runner of your own.
+
 ## Prerequisites: 
 - Latest JDK and JRE is recommended but any JDK or JRE should work from 2016 and onward.
 
